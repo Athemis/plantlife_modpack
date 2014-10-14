@@ -41,7 +41,7 @@ minetest.register_node("mushroom:red",{
 	},
     drop = "mushroom:red",
 })
-
+--[[
 minetest.register_node("mushroom:spore_brown",{
 	description = "Brown Mushroom Spore",
 	drawtype = "raillike",
@@ -73,7 +73,7 @@ minetest.register_node("mushroom:spore_red",{
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4, 0.5}
 	},
 })
-
+]]--
 --Natural Mushrooms
 
 minetest.register_node("mushroom:brown_natural",{
@@ -111,7 +111,7 @@ minetest.register_node("mushroom:red_natural",{
 })
 
 -- Spore Growing ABMs
-
+--[[
 minetest.register_abm({
 	nodenames = {"mushroom:spore_brown"},
 	neighbors = {"air"},
@@ -139,7 +139,7 @@ minetest.register_abm({
 		end
 	end
 })
-
+]]--
 -- list of trees that mushrooms can grow next to
 
 local trees_list = {
