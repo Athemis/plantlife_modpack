@@ -7,7 +7,7 @@ else
   S = function ( s ) return s end
 end
 
-
+--[[
 -- Basket
 
 minetest.register_craft({
@@ -17,7 +17,7 @@ minetest.register_craft({
 	{ "", "default:stick", "" },
     },
 })
-
+]]--
 -- Sugar
 
 minetest.register_craftitem(":bushes:sugar", {
@@ -104,7 +104,7 @@ for i, berry in ipairs(bushes_classic.bushes) do
 	})
 
 	-- Basket with pies
-
+--[[
 	minetest.register_craft({
 		output = "bushes:basket_"..berry.." 1",
 		recipe = {
@@ -112,6 +112,7 @@ for i, berry in ipairs(bushes_classic.bushes) do
 		{ "", "bushes:basket_empty", "" },
 		},
 	})
+]]--
 end
 
 minetest.register_craft({
