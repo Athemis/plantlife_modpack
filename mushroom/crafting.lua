@@ -1,5 +1,5 @@
 -- craft items
-
+--[[
 minetest.register_craftitem("mushroom:spore1",{
 	description = "Unidentified Mushroom Spore",
 	inventory_image = "mushroom_spore.png",
@@ -89,3 +89,4 @@ minetest.register_craft( {
              { 'mushroom:identifier', 'mushroom:identifier' }
          }
 })
+]]--
