@@ -28,6 +28,7 @@ for i in pairs(NoDe) do
 		sunlight_propagates = true,
 		buildable_to = true,
 		node_box = {type = "fixed", fixed = flat_stick},
+
 		groups = {
 			dig_immediate=3, -- almost literally immediate, like just picking up
 			attached_node=1,
@@ -342,12 +343,13 @@ for i in pairs(TRuNKS) do
 			drawtype = "nodebox",
 			selection_box = {type = "fixed", fixed = roots_cube},
 			node_box = {type = "fixed", fixed = roots_sheet},
+
 			groups = {
 				tree=1,
 				snappy=1,
-				choppy=2,
-				oddly_breakable_by_hand=1,
-				flammable=2--,
+				choppy=3,
+				--oddly_breakable_by_hand=1,
+				flammable=1--,
 				--not_in_creative_inventory=1 -- atm in inv for testing 
 			},
 			--drop = "trunks:twig_1", -- not sure about this yet
